@@ -1,5 +1,5 @@
 # Getting to Blinky
-![Rendering of the pcb](graphics\pcb_render.png)
+![Rendering of the pcb](/graphics/pcb_render.png)
 This project is designed to introduce you to KiCad and electronics design. The gadget is battery powered and will blink a high luminosity LED as well as output a tone to a speaker. The frequency can be switched between 1 Hz and 440Hz with a solder jumper. The two integrated circuits are classics and are considered [jellybean](https://forum.digikey.com/t/what-are-jellybean-electronic-components/46180) parts.
 
 ## General design requirements
