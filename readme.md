@@ -31,7 +31,8 @@ This project is designed to introduce you to KiCad and electronics design. The g
 * The purpose of the 0.1µF decoupling capacitor
 * Dividing a schematic into functional blocks
 * Annotating the schematic
-* Running Design Rules Check
+* Running Electrical Rules Check
+
 
 ## Teaching points in PCB Editor
 * Switching from schematic to pcb
