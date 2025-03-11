@@ -5,8 +5,8 @@ This project is designed to introduce you to KiCad and electronics design. The g
 
 ## General design requirements
 * Power supplied by [3 x AA batteries](https://www.digikey.no/en/products/detail/keystone-electronics/2464/303813)
-* Generate the pulsed signal with a [555 timer](.\datasheets\ne555.pdf) chip
-* Boost the battery voltage with the [MC34063](.\datasheets\MC34063A-D.pdf) DC-DC regulator
+* Generate the pulsed signal with a [555 timer](/datasheets/ne555.pdf) chip
+* Boost the battery voltage with the [MC34063](/datasheets/MC34063A-D.pdf) DC-DC regulator
 * Let the 555 timer drive 0.25 Watt into an 8Ω speaker without an additional amplifier
 * Use only through hole parts in the design with two small exceptions
 * Familiarize the designer with SMD parts of imperial size 0603 and 0805.
