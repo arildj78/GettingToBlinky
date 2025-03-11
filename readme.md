@@ -2,6 +2,8 @@
 ![Rendering of the pcb](/graphics/pcb_render.png)
 This project is designed to introduce you to KiCad and electronics design. The gadget is battery powered and will blink a high luminosity LED as well as output a tone to a speaker. The frequency can be switched between 1 Hz and 440Hz with a solder jumper. The two integrated circuits are classics and are considered [jellybean](https://forum.digikey.com/t/what-are-jellybean-electronic-components/46180) parts.
 
+## The schematic
+![Image of the schematic](/graphics/schematic.png)
 
 ## General design requirements
 * Power supplied by [3 x AA batteries](https://www.digikey.no/en/products/detail/keystone-electronics/2464/303813)
@@ -13,6 +15,18 @@ This project is designed to introduce you to KiCad and electronics design. The g
 * Introduce some of the tools and techniques that are useful in KiCad
 * Cut a slot in the PCB to use as strain relief for the speaker cable
 * Use a two layer pcb design
+
+## DC-DC regulator design decisions
+* Input voltage 3.75V ±20%
+    * An assumption is made that an alkaline cell with 50% of the energy left is at approximately 1.25V. We are using three of these in series.
+* Output current 150mA
+    * This is a compromise. Not all the way to 0.25 watt on the speaker and not maxing out the available current from the 555 timer chip. May change after prototyping.
+* Output Voltage 6.25V
+    * The voltage needs to be this high to get 2.4V voltage swing on the output when pulling 150mA from the output of the 555.
+* Switching frequency 100kHz
+    * A high switching frequency lets the inductor be small. This is the maximum frequency supported by the selected regulator.
+* Output ripple voltage 100mV
+    * An arbitrary value. Same as Dave chose in the YouTube video [EEVblog #110 - Let's Design a DC to DC Switch mode Converter](https://youtu.be/qGp82xhybs4).
 
 
 ## Teaching points in Schematic Editor
