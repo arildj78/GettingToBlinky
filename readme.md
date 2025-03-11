@@ -47,7 +47,7 @@ This project is designed to introduce you to KiCad and electronics design. The g
 * Route Tracks
     * Track size
     * Use of vias and multiple layers
-* Create filled zones for ground and power
+* Create filled zones for ground (and power if the board had more layers)
 * Use the 3D-viewer
 * Use the Design Rules Check
 
